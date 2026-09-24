@@ -23,7 +23,7 @@ Python 3.10+, Streamlit, pandas, NumPy, scikit-learn, NLTK (PorterStemmer), requ
 ## Setup & Run
 1. Install Python 3.10 or newer.
 2. Put these files in one folder:
-   - `YourName_MovieRecommender.py`
+   - `SouvikSaha_MovieRecommender.py`
    - `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv` (in the same folder or in a `data/` sub-folder)
 3. Install dependencies:
    ```bash
@@ -44,4 +44,4 @@ The first launch takes around 20 seconds while the model is built; after that it
 - This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ## Author
-Your Name
+Souvik Saha
