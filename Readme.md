@@ -15,11 +15,9 @@ The app builds a "tags" text profile for every movie by combining its **keywords
 - Movie details: rating, runtime, genres, overview, director, stars, trailer link
 - Six recommendations with match score; click any to explore further
 - Watchlist in the sidebar
-- Optional posters via the TMDB API (the app works without them)
 
 ## Technologies Used
-Python 3.10+, Streamlit, pandas, NumPy, scikit-learn, NLTK (PorterStemmer), requests, TMDB API (optional, posters)
-
+Python 3.10+, Streamlit, pandas, NumPy, scikit-learn, NLTK (PorterStemmer)
 ## Setup & Run
 1. Install Python 3.10 or newer.
 2. Put these files in one folder:
@@ -33,15 +31,12 @@ Python 3.10+, Streamlit, pandas, NumPy, scikit-learn, NLTK (PorterStemmer), requ
    ```bash
    streamlit run YourName_MovieRecommender.py
    ```
-5. *(Optional)* For posters, get a free API key from https://www.themoviedb.org/settings/api and paste it into the sidebar box, or set the `TMDB_API_KEY` environment variable.
-
 The first launch takes around 20 seconds while the model is built; after that it is cached.
 
 ## Key Information
 - Everything (data preparation, model, and UI) is in a single `.py` file. No pre-built pickle files are needed.
 - Movies are merged on their unique `id`, so there are no duplicate rows.
 - The movie itself is never recommended to itself.
-- This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ## Author
 Souvik Saha
